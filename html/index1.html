@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+    document.getElementById("audio").play(); 
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #abc85c;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+ 
+<div id="flip">Click to edge Nandha</div>
+<div id="panel">
+    <img src="nandhoo.png"><br>
+    *Moans*
+</div>
+
+<!-- Audio element -->
+<audio id="audio" src="nandha.mp3"></audio>
+
+</body>
+</html>
